@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Cocoa & Beans</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
     <!-- Header and Navigation -->
     <header>
         <div class="header-content">
-            <div class="logo"><img src="images/logo.jpeg" alt="Cocoa & Beans Logo"></div>
+            <div class="logo"><img src="images/logo.png" alt="Cocoa & Beans Logo"></div>
                 <div class="title">Cocoa & Beans</div>
-                    <div class="logo"><img src="images/logo.jpeg" alt="Cocoa & Beans Logo"></div>
+                    <div class="logo"><img src="images/logo.png" alt="Cocoa & Beans Logo"></div>
         </div>
         <nav>
             <ul>
@@ -24,45 +26,119 @@
     </header>
 
     <!-- Menu Section -->
-    <section id="menu" class="section">
-        <div class="menu-category">
-            <h2>Beverages</h2>
-            <ul>
-                <li>Espresso - 110</li>
-                <li>Americano - 140</li>
-                <li>Latte - 210</li>
-                <li>Cappuccino - 210</li>
-                <li>Hot Chocolate - 230</li>
-                <li>Affogato - 180</li>
-            </ul>
-        </div>
-        <div class="menu-category">
-            <h2>Light Bites</h2>
-            <ul>
-                <li>Classic Pancake - 230</li>
-                <li>Hash Brown - 210</li>
-                <li>Eggs Benedict - 250</li>
-                <li>Pesto Spaghetti - 300</li>
-                <li>Nutella Waffle - 210</li>
-                <li>French Toast - 190</li>
-            </ul>
-        </div>
-        <div class="menu-category">
-            <h2>Baked Goods</h2>
-            <ul>
-                <li>Croissant - 180</li>
-                <li>Cinnamon Roll - 150</li>
-                <li>NY Cheesecake - 200</li>
-                <li>Bagels - 160</li>
-                <li>Tiramisu - 180</li>
-                <li>Macaroons - 80</li>
-            </ul>
+    <section class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-grid" style="justify-content: center;">
+            <div class="menu-item">
+                <img src="images/beverages/affogato.jpg" alt="affogato">
+                <h4>Affogato    ₹220</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverages/americano.jpg" alt="americano">
+                <h4>Americano   ₹150</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverages/cappuccino.jpg" alt="cappuccino">
+                <h4>Cappuccino  ₹250</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverages/espresso.jpg" alt="espresso">
+                <h4>Espresso    ₹120</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverages/hotchocolate.jpg" alt="hotchocolate">
+                <h4>Hot Chocolate   ₹280</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverages/latte.jpg" alt="latte">
+                <h4>Latte   ₹250</h4>
+                <button>Order Now</button>
+            </div>
+
+
+        <br><h2>Light Bites</h2><br>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/light bites/eggsbenedict.jpg" alt="eggs benedict">
+                <h4>Eggs Benedict   ₹300</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/light bites/frenchtoast.jpg" alt="french toast">
+                <h4>French Toast    ₹220</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/light bites/hashbrown.jpg" alt="hash brown">
+                <h4>Hash Brown  ₹250</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/light bites/pancake.jpg" alt="pancake">
+                <h4>Classic Pancake   ₹280</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/light bites/spaghetti.jpg" alt="pesto spaghetti">
+                <h4>Pesto Spaghetti   ₹350</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/light bites/waffle.jpg" alt="nutella waffle">
+                <h4>Nutella Waffle   ₹250</h4>
+                <button>Order Now</button>
+            </div>
+
+
+        <br><h2>Baked Goods</h2><br>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/baked goods/bagel.webp" alt="bagel" width="225" height="225">
+                <h4>Bagel   ₹200</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/baked goods/cinnamonroll.jpg" alt="cinnamon roll">
+                <h4>Cinnamon Roll   ₹170</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/baked goods/croissant.jpg" alt="croissant">
+                <h4>Croissant   ₹200</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/baked goods/macaroons.jpg" alt="macaroons">
+                <h4>Macaroons   ₹100</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/baked goods/nycheesecake.jpg" alt="new york cheesecake">
+                <h4>New York Cheesecake   ₹250</h4>
+                <button>Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/baked goods/tiramisu.jpg" alt="tiramisu">
+                <h4>Tiramisu   ₹200</h4>
+                <button>Order Now</button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>2024 Cocoa & Beans. All rights reserved.</p>
+        <div class="contact">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>
