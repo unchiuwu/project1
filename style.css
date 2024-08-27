@@ -14,6 +14,7 @@ header {
     align-items: center;
     background-color: #AF6C3E;
     padding: 10px 20px;
+    border-bottom: 7px solid black;
 }
 
 .header-content {
@@ -23,13 +24,12 @@ header {
     margin-inline: 30px;
 }
 
-.logo img{
+.logo img {
     width: 100px;
     height: 100px;
     max-width: 100%;
     max-height: 100%;
 }
-
 
 .title {
     font-size: 2rem;
@@ -57,7 +57,68 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.textbox {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.slideshowbox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float:left;
+    width:20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
 }
 
 #home h1 {
@@ -100,4 +161,17 @@ footer {
     background-color: #AF6C3E;
     padding: 10px 0;
     margin-top: 20px;
+    border-top: 7px solid black;
+    border-bottom: 7px solid black;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    font-size: xx-large;
+}
+
+.contact a:hover {
+    transform: scale(1.5);
 }
