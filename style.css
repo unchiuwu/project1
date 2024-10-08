@@ -249,3 +249,90 @@ footer {
 .contact a:hover {
     transform: scale(1.5);
 }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form {
+    width: 98%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    border-radius: 30px;
+    background: #df9564;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.fa-mug-saucer {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #AF6C3E;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-group label {
+    flex-basis: 28%;
+}
+
+.input-group input, .input-group textarea {
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #AF6C3E;
+    font-size: 16px;
+    color:black;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    font-size: 14px; 
+    color: #3e2723; 
+}
+
+form button {
+    background-color: #AF6C3E;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.input-group span {
+    position:absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: rgb(216, 0, 0);
+}
+
+#submit-error {
+    color: rgb(216, 0, 0);
+}
+
+.input-group span i {
+    color:rgb(52, 207, 119);
+    font-size: 18px;
+}

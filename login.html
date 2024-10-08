@@ -27,24 +27,39 @@
     </header>
 
     <!-- Login Section -->
-    <section class="menu-section">
-        <h2>Leave a review!</h2>
+    <div class="container">
         <form>
-            <div class="id">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Full Name">
+            <i class="fa-solid fa-mug-saucer"></i>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
             </div>
-            <div class="id">
-                <i class="fa-regular fa-envelope"></i>
-                <input type="email" placeholder="E-mail ID">
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter E-mail ID" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+
             </div>
-            <div class="id">
-                <i class="fa-solid fa-pen"></i>
-                <input type="text" placeholder="Write your review here!">
+
+            <div class="input-group">
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="+91 XXXXX-NNNNN" id="contact-number" onkeyup="validateNumber()">
+                <span id="phone-error"></span>
             </div>
-            <button>Submit</button>
+
+            <div class="input-group">
+                <label>Your Review</label>
+                <textarea rows="5" placeholder="Enter Your Review Here" id="contact-review" onkeyup="validateReview()"></textarea>
+                <span id="message-error"></span>
+            </div>
+
+            <button onclick="return validateForm()">Submit!</button>
+            <span id="submit-error"></span>
         </form>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -56,5 +71,6 @@
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
