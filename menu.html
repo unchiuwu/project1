@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Cocoa & Beans</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
-
+    <style>
+        /* Add styles for search input */
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header and Navigation -->
     <header>
         <div class="header-content">
             <div class="logo"><img src="images/logo.png" alt="Cocoa & Beans Logo"></div>
-                <div class="title">Cocoa & Beans</div>
-                    <div class="logo"><img src="images/logo.png" alt="Cocoa & Beans Logo"></div>
+            <div class="title">Cocoa & Beans</div>
+            <div class="logo"><img src="images/logo.png" alt="Cocoa & Beans Logo"></div>
         </div>
         <nav>
             <ul>
@@ -24,6 +38,10 @@
                 <li><a href="login.html">Review</a></li>
             </ul>
         </nav>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="find" placeholder="Search Menu" onkeyup="search()">
+        </div>
     </header>
 
     <!-- Menu Section -->
@@ -61,75 +79,73 @@
                 <button>Order Now</button>
             </div>
 
+            <br><h2>Light Bites</h2><br>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/light bites/eggsbenedict.jpg" alt="eggs benedict">
+                    <h4>Eggs Benedict   ₹300</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/light bites/frenchtoast.jpg" alt="french toast">
+                    <h4>French Toast    ₹220</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/light bites/hashbrown.jpg" alt="hash brown">
+                    <h4>Hash Brown  ₹250</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/light bites/pancake.jpg" alt="pancake">
+                    <h4>Classic Pancake   ₹280</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/light bites/spaghetti.jpg" alt="pesto spaghetti">
+                    <h4>Pesto Spaghetti   ₹350</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/light bites/waffle.jpg" alt="nutella waffle">
+                    <h4>Nutella Waffle   ₹250</h4>
+                    <button>Order Now</button>
+                </div>
 
-        <br><h2>Light Bites</h2><br>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="images/light bites/eggsbenedict.jpg" alt="eggs benedict">
-                <h4>Eggs Benedict   ₹300</h4>
-                <button>Order Now</button>
+            <br><h2>Baked Goods</h2><br>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/baked goods/bagel.webp" alt="bagel" width="225" height="225">
+                    <h4>Bagel   ₹200</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/baked goods/cinnamonroll.jpg" alt="cinnamon roll">
+                    <h4>Cinnamon Roll   ₹170</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/baked goods/croissant.jpg" alt="croissant">
+                    <h4>Croissant   ₹200</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/baked goods/macaroons.jpg" alt="macaroons">
+                    <h4>Macaroons   ₹100</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/baked goods/nycheesecake.jpg" alt="new york cheesecake">
+                    <h4>New York Cheesecake   ₹250</h4>
+                    <button>Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/baked goods/tiramisu.jpg" alt="tiramisu">
+                    <h4>Tiramisu   ₹200</h4>
+                    <button>Order Now</button>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="images/light bites/frenchtoast.jpg" alt="french toast">
-                <h4>French Toast    ₹220</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/light bites/hashbrown.jpg" alt="hash brown">
-                <h4>Hash Brown  ₹250</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/light bites/pancake.jpg" alt="pancake">
-                <h4>Classic Pancake   ₹280</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/light bites/spaghetti.jpg" alt="pesto spaghetti">
-                <h4>Pesto Spaghetti   ₹350</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/light bites/waffle.jpg" alt="nutella waffle">
-                <h4>Nutella Waffle   ₹250</h4>
-                <button>Order Now</button>
-            </div>
-
-
-        <br><h2>Baked Goods</h2><br>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="images/baked goods/bagel.webp" alt="bagel" width="225" height="225">
-                <h4>Bagel   ₹200</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/baked goods/cinnamonroll.jpg" alt="cinnamon roll">
-                <h4>Cinnamon Roll   ₹170</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/baked goods/croissant.jpg" alt="croissant">
-                <h4>Croissant   ₹200</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/baked goods/macaroons.jpg" alt="macaroons">
-                <h4>Macaroons   ₹100</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/baked goods/nycheesecake.jpg" alt="new york cheesecake">
-                <h4>New York Cheesecake   ₹250</h4>
-                <button>Order Now</button>
-            </div>
-            <div class="menu-item">
-                <img src="images/baked goods/tiramisu.jpg" alt="tiramisu">
-                <h4>Tiramisu   ₹200</h4>
-                <button>Order Now</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Footer -->
     <footer>
@@ -141,5 +157,8 @@
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
